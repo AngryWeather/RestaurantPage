@@ -1,6 +1,7 @@
 import { addHeader } from "./header";
 import {mainContent} from "./mainContent";
 import {addFooter} from "./footer";
+import { createHomePage } from "./homePage";
 
 
 const tabs = ["home", "menu", "contact"];
@@ -18,7 +19,10 @@ function buttonListener() {
 
 function setActiveTab(e) {
     let activeTab = e.target.value;
-    alert(activeTab);
+    if (activeTab === "Home") {
+        alert(true);
+        createHomePage();
+    }
 }
 
 buttonListener();
