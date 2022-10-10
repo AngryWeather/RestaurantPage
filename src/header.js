@@ -7,11 +7,11 @@ function addHeader() {
     content.appendChild(header);
  
     const headerText = document.createElement("h1");
-    headerText.textContent = "Family Restaurant";
+    headerText.textContent = "Family Pizza";
     header.appendChild(headerText);
 
     const buttonContainer = document.createElement("div");
-    buttonContainer.classList.toggle(".buttonContainer");
+    buttonContainer.classList.toggle("button-container");
     header.appendChild(buttonContainer)
 
     for (let i = 0; i < 3; i++) {
