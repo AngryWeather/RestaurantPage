@@ -10,3 +10,7 @@ body {
     display: flex;
 }
 
+.main {
+    display: flex;
+    height: 100rem;
+}
