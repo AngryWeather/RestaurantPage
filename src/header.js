@@ -10,9 +10,13 @@ function addHeader() {
     headerText.textContent = "Family Restaurant";
     header.appendChild(headerText);
 
+    const buttonContainer = document.createElement("div");
+    buttonContainer.classList.toggle(".buttonContainer");
+    header.appendChild(buttonContainer)
+
     for (let i = 0; i < 3; i++) {
         const button = document.createElement("button");
-        header.appendChild(button);
+        buttonContainer.appendChild(button);
     }
 
     const homeButton = document.querySelector(".header button:nth-of-type(1)");

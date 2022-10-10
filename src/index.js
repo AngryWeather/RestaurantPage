@@ -17,7 +17,7 @@ function buttonListener() {
 }
 
 function setActiveTab(e) {
-    let activeTab = e.target;
+    let activeTab = e.target.value;
     alert(activeTab);
 }
 
