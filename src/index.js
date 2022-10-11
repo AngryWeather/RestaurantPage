@@ -4,12 +4,13 @@ import {addFooter} from "./footer";
 import { createHomePage } from "./homePage";
 
 
-// const tabs = ["home", "menu", "contact"];
-// let activeTab = tabs[0];
-
 addHeader();
 mainContent();
 createHomePage();
+const homeButton = document.querySelector("button");
+homeButton.style.backgroundColor = "#e6e6e6";
+homeButton.style.color = "#808080";
+
 
 function buttonListener() {
     const buttons = document.querySelectorAll(".header button")
@@ -20,12 +21,14 @@ function buttonListener() {
 
 function setActiveTab(e) {
     let activeTab = e.target.value;
+    e.target.style.backgroundColor = "#e6e6e6";
+    e.target.style.color = "#808080";
     clearMain();
     
     switch(activeTab) {
         case "Home":
             createHomePage();
-            break;
+            break;      
     }
 }
 
