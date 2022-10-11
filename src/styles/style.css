@@ -81,3 +81,13 @@ p {
     color: #1a1a1a;
     font-family: AnjaliOldLipi;
 }
+
+.order-button {
+    background-color: #96242f;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-family: "Liberation Mono";
+    color: #e6e6e6;
+    font-size: 1.5rem;
+}

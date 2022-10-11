@@ -31,6 +31,7 @@ function createHomePage() {
 
     // order button
     const orderButton = document.createElement("button");
+    orderButton.classList.toggle("order-button");
     orderButton.textContent = "Order";  
     orderDiv.appendChild(orderButton);
 
