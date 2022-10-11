@@ -21,8 +21,11 @@ function buttonListener() {
 function setActiveTab(e) {
     let activeTab = e.target.value;
     clearMain();
-    if (activeTab === "Home") {
-        createHomePage();
+    
+    switch(activeTab) {
+        case "Home":
+            createHomePage();
+            break;
     }
 }
 

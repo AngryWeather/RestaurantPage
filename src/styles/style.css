@@ -75,6 +75,7 @@ h2 {
     font-family: monospace;
     font-weight: normal;
     font-size: 1.5rem;
+    margin-top: 5rem;
 }
 
 p {
@@ -90,4 +91,5 @@ p {
     font-family: "Liberation Mono";
     color: #e6e6e6;
     font-size: 1.5rem;
+    margin-top: 2rem;
 }
