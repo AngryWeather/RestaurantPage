@@ -2,6 +2,7 @@ import { addHeader } from "./header";
 import {mainContent} from "./mainContent";
 import {addFooter} from "./footer";
 import { createHomePage } from "./homePage";
+import {createMenuPage} from "./menuPage";
 
 
 addHeader();
@@ -29,7 +30,10 @@ function setActiveTab(e) {
     switch(activeTab) {
         case "Home":
             createHomePage();
-            break;      
+            break;  
+        case "Menu":
+            createMenuPage();
+            break;    
     }
 }
 
