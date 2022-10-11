@@ -20,6 +20,7 @@ function buttonListener() {
 }
 
 function setActiveTab(e) {
+    resetTabColor();
     let activeTab = e.target.value;
     e.target.style.backgroundColor = "#e6e6e6";
     e.target.style.color = "#808080";
@@ -30,6 +31,14 @@ function setActiveTab(e) {
             createHomePage();
             break;      
     }
+}
+
+function resetTabColor() {
+    let tabs = document.querySelectorAll(".button-container > button");
+    tabs.forEach((tab) => {
+        tab.style.backgroundColor = "#808080";
+        tab.style.color = "#e6e6e6";
+    });
 }
 
 function clearMain() {
