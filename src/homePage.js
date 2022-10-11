@@ -33,6 +33,19 @@ function createHomePage() {
     const orderButton = document.createElement("button");
     orderButton.textContent = "Order";  
     orderDiv.appendChild(orderButton);
+
+    ingredients();
+}
+
+function ingredients() {
+    const homeDiv = document.querySelector(".home-div");
+    const ingredientsDiv = document.createElement("div");
+    ingredientsDiv.classList.toggle("ingredients-div");
+    homeDiv.appendChild(ingredientsDiv);
+
+    const ingredientsHeading = document.createElement("h2");
+    ingredientsHeading.textContent = "Healthy Ingredients";
+    ingredientsDiv.appendChild(ingredientsHeading);
 }
 
 export{createHomePage};
