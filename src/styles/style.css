@@ -93,3 +93,11 @@ p {
     font-size: 1.5rem;
     margin-top: 2rem;
 }
+
+.menu-div {
+    width: 100%;
+}
+
+table {
+   margin: 0 auto;
+}

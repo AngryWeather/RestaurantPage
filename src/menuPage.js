@@ -1,7 +1,7 @@
 function createMenuPage() {
     const main = document.querySelector(".main");
     const menuDiv = document.createElement("div");
-    menuDiv.classList.toggle(".menu-div");
+    menuDiv.classList.toggle("menu-div");
     main.appendChild(menuDiv);
     menuDiv.appendChild(createTable());
 }
@@ -25,7 +25,8 @@ function createTable() {
     row.appendChild(price);
 
     // iterate through pizzas object and create table rows
-    for (let pizza in createPizzas()) {
+    const pizzas = createPizzas();
+    for (let pizza in pizzas) {
         const pizzaRow = document.createElement("tr");
         table.appendChild(pizzaRow);
 
@@ -34,7 +35,7 @@ function createTable() {
         pizzaRow.appendChild(pizzaData);
 
         const priceData = document.createElement("td");
-        priceData.textContent = createPizzas()[pizza];
+        priceData.textContent = pizzas[pizza];
         pizzaRow.appendChild(priceData);
     }
     
