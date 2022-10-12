@@ -23,7 +23,16 @@ function createTable() {
     const price = document.createElement("th");
     price.textContent = "PRICE";
     row.appendChild(price);
-    createPizzas();
+
+    // iterate through pizzas object and create table rows
+    for (let pizza in createPizzas()) {
+        const pizzaRow = document.createElement("tr");
+        table.appendChild(pizzaRow);
+
+        const pizzaData = document.createElement("td");
+        pizzaData.textContent = pizza;
+        pizzaRow.appendChild(pizzaData);
+    }
     
     return table;
 }
@@ -39,5 +48,6 @@ function createPizzas() {
 
     return pizzas;
 }
+
 
 export {createMenuPage};
