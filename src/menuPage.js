@@ -23,9 +23,21 @@ function createTable() {
     const price = document.createElement("th");
     price.textContent = "PRICE";
     row.appendChild(price);
-
+    createPizzas();
     
     return table;
+}
+
+function createPizzas() {
+    const pizzas = {
+        "Margherita": 14.99,
+        "Hawaiian": 15.99,
+        "Veggie": 16.99,
+        "Cheese": 17.99,
+        "Bacon": 18.99
+    };
+
+    return pizzas;
 }
 
 export {createMenuPage};
