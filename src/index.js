@@ -3,6 +3,7 @@ import {mainContent} from "./mainContent";
 import {addFooter} from "./footer";
 import { createHomePage } from "./homePage";
 import {createMenuPage} from "./menuPage";
+import {createContactPage} from "./contactPage";
 
 
 addHeader();
@@ -33,7 +34,10 @@ function setActiveTab(e) {
             break;  
         case "Menu":
             createMenuPage();
-            break;    
+            break; 
+        case "Contact":
+            createContactPage();
+            break;   
     }
 }
 
