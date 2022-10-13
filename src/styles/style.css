@@ -79,7 +79,7 @@ h2 {
 }
 
 p {
-    color: #1a1a1a;
+    color: #333;
     font-family: AnjaliOldLipi;
 }
 
@@ -119,4 +119,21 @@ th {
 
 th, td {
     padding: 1rem 5rem;
+}
+
+.contact-div {
+    width: 100%;
+}
+
+.person {
+    border: 2px solid #808080;
+    width: 20%;
+    margin: 1rem auto;
+    text-align: center;
+    font-family: AnjaliOldLipi;
+    color: #333333;
+}
+
+.person p:first-of-type {
+    font-weight: bold;
 }
