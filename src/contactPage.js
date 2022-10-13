@@ -6,8 +6,22 @@ function createContactPage() {
 
     // create contact objects and add them to the contact page
     const contacts = createContacts();
-    for (let contact in contacts) {
-        const contactDiv = document.createElement("div");
+    for (let i = 0; i < contacts.length; i++) {
+        const person = document.createElement("div");
+        person.classList.toggle("person");
+        contactDiv.appendChild(person);
+
+        const name = document.createElement("p");
+        name.textContent = contacts[i].name;
+        person.appendChild(name);
+
+        const position = document.createElement("p");
+        position.textContent = contacts[i].position;
+        person.appendChild(position);
+
+        const phone = document.createElement("p");
+        phone.textContent = contacts[i].phoneNumber;
+        person.appendChild(phone);
     }
 
 }
