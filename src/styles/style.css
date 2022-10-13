@@ -99,5 +99,24 @@ p {
 }
 
 table {
-   margin: 0 auto;
+   margin: 4rem auto 0 auto;
+}
+
+td {
+    font-family: AnjaliOldLipi;
+    font-size: 1.2rem;
+    background-color: #e6e6e6;
+    color: #808080;
+}
+
+th {
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: normal;
+    background-color: #808080;
+    color: #e6e6e6;
+}
+
+th, td {
+    padding: 1rem 5rem;
 }

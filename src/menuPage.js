@@ -35,7 +35,7 @@ function createTable() {
         pizzaRow.appendChild(pizzaData);
 
         const priceData = document.createElement("td");
-        priceData.textContent = pizzas[pizza];
+        priceData.textContent = `$${pizzas[pizza]}`;
         pizzaRow.appendChild(priceData);
     }
     
