@@ -27,9 +27,9 @@ function createContactPage() {
 }
 
 function createContacts() {
-    const contacts = [new Contact("John Smith", "Manager", "100-1000"),
-                        new Contact("Martin Smith", "chef", "100-1001"),
-                        new Contact("Amy Smith", "waitress", "100-1002")];
+    const contacts = [new Contact("Jan Kowalski", "Manager", "100-1000"),
+                        new Contact("Andrzej Kowalski", "chef", "100-1001"),
+                        new Contact("Anna Kowalska", "waitress", "100-1002")];
     return contacts;
 }
 
