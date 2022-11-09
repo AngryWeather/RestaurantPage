@@ -12,6 +12,10 @@
     gap: 0;
    }
 
+   #content {
+    min-height: 100vh;
+   }
+
    #content > .header > h1 {
     text-align: center;
     margin: 1rem auto;
@@ -135,29 +139,31 @@ p {
 
 .menu-div {
     flex: 1;
+    display: flex;
 }
 
 table {
    margin: 4rem auto 0 auto;
+   flex: 1;
+   margin-left: 4rem;
+   margin-right: 4rem;
 }
 
 td {
     font-family: AnjaliOldLipi;
-    font-size: 1.2rem;
     background-color: #e6e6e6;
     color: #808080;
 }
 
 th {
     font-family: monospace;
-    font-size: 1.5rem;
     font-weight: normal;
     background-color: #808080;
     color: #e6e6e6;
 }
 
 th, td {
-    padding: 1rem 5rem;
+    padding: 1rem;
 }
 
 .contact-div {
